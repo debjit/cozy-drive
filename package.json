@@ -119,7 +119,7 @@
     "kd-tree-javascript": "1.0.3",
     "localforage": "1.7.3",
     "lodash": "4.17.11",
-    "mime-types": "2.1.19",
+    "mime-types": "2.1.22",
     "node-polyglot": "2.3.0",
     "node-uuid": "1.4.8",
     "piwik-react-router": "0.8.2",
