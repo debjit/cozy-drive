@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import copy from 'copy-text-to-clipboard'
 import Toggle from 'cozy-ui/react/Toggle'
 import { Spinner, SubTitle } from 'cozy-ui/react'
@@ -7,6 +8,10 @@ import cx from 'classnames'
 import styles from '../share.styl'
 
 class ShareByLink extends React.Component {
+  static contextTypes = {
+    t: PropTypes.func.isRequired
+  }
+
   state = {
     loading: false
   }
