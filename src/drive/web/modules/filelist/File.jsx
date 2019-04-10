@@ -110,7 +110,13 @@ const SelectBox = ({ withSelectionCheckbox, selected, onClick }) => (
   >
     {withSelectionCheckbox && (
       <span data-input="checkbox">
-        <input type="checkbox" checked={selected} />
+        <input
+          onChange={() => {
+            // handled by onClick on the <div>
+          }}
+          type="checkbox"
+          checked={selected}
+        />
         <label />
       </span>
     )}
