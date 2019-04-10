@@ -31,7 +31,6 @@ class StatefulDropzone extends Component {
   render() {
     const { dropzoneActive } = this.state
     const { displayedFolder, children, ...rest } = this.props
-    console.log('rest', rest)
     return (
       <Dropzone
         {...rest}
