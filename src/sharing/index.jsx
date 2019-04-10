@@ -345,6 +345,10 @@ export const ShareButton = ({ docId, ...rest }, { t }) => (
   </SharingContext.Consumer>
 )
 
+ShareButton.contextTypes = {
+  t: PropTypes.func.isRequired
+}
+
 const EditableSharingModal = ({ document, ...rest }) => (
   <SharingContext.Consumer>
     {({

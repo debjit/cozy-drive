@@ -68,6 +68,10 @@ const RequestPermissionPopin = ({ onClose, onAccept }, { t }) => (
   </div>
 )
 
+RequestPermissionPopin.contextTypes = {
+  t: PropTypes.func.isRequired
+}
+
 RequestPermissionPopin.propTypes = {
   onClose: PropTypes.func.isRequired,
   onAccept: PropTypes.func.isRequired
@@ -160,7 +164,7 @@ ShareSubmit.defaultProps = {
 class ShareByEmail extends Component {
   static contextTypes = {
     t: PropTypes.func.isRequired,
-        client: PropTypes.object.isRequired
+    client: PropTypes.object.isRequired
   }
   sharingTypes = [
     {
